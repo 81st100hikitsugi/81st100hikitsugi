@@ -6,6 +6,32 @@ body {
 
 /* ヘッダー */
 
+@media (max-width: 600px) {
+
+    .header-left,
+    .header-right,
+    #topBtn {
+        padding: 8px 12px;      /* 少し小さく */
+        font-size: 14px;        /* 文字も少し小さく */
+    }
+
+    .header-left {
+        top: 8px;
+        left: 8px;
+    }
+
+    .header-right {
+        top: 8px;
+        right: 8px;
+    }
+
+    #topBtn {
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+
 /* 左上のHPボタン */
 .header-left {
     position: fixed;
