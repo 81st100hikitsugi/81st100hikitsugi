@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>81th100引継ぎ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <!-- 左上：HPボタン -->
+<div class="header-left" id="headerLeft">
+    <a href="index.html"><h1>81th100引継ぎ</h1></a>
+</div>
+
+<!-- 右上：ナビボタン -->
+<div class="header-right" id="headerRight">
+    <a id="menuBtn"><h1>≡</h1></a>
+</div>
+
+<!-- ナビメニュー（右上から開く） -->
+<div class="nav-menu" id="navMenu">
+    <a href="news.html">ニュース</a>
+    <a href="gijiroku.html">議事録</a>
+    <a href="1100.html">1100 11番坑道</a>
+    <a href="2100.html">2100 unknown</a>
+    <a href="3100.html">3100 unknown</a>
+    <a href="skp.html">SketchUp</a>
+    <a href="mp4.html">動画編集</a>
+</div>
+
+</header>
+
+    <main>
+        <section class="hero">
+            <h2>HP</h2>
+            <p>画像とか載せたい</p>
+        </section>
+
+<section class="sec-leftline">
+    <h2 class="heading-leftline">ニュース</h2>
+    <p>
+        202-.--.--　81th100引継ぎサイトを開設しました！
+        <br>
+        <p style="text-align:right;"><a href="news.html">一覧へ⇀</a></p>
+    </p>
+</section>
+
+<section class="sec-leftline">
+    <h2 class="heading-leftline">11番坑道</h2>
+    <div class="card-container">
+
+    <a href="1100.html#1100rail" class="card">
+        <img src="rail.png" alt="画像1">
+        <p>ライド</p>
+    </a>
+
+    <a href="1100.html#1100track" class="card">
+        <img src="track.png" alt="画像2">
+        <p>ライド本体</p>
+    </a>
+
+    <a href="1100.html#1100naisou" class="card">
+        <img src="naisou.png" alt="画像3">
+        <p>内装</p>
+    </a>
+
+    <a href="1100.html#1100gaisou" class="card">
+        <img src="gaisou.png" alt="画像4">
+        <p>外装</p>
+    </a>
+
+</div>
+</section>
+
+<section class="sec-leftline">
+    <h2 class="heading-leftline">挨拶・お問い合わせ</h2>
+    <p>こんにちは、またははじめまして、81th120の高橋陽菜と申します。
+        <br>
+        私たちのクラス100の設計チーフとして1年次はホラー×ライドの「11番坑道」制作に関わらせていただきました。
+        <br>
+        さて、この度情報共有の改善と、私たちや今見てくださっている国高生の皆様に向けた引継ぎをしたいと考え、
+        こちらのサイトを作りました。
+        <br>
+        順次情報を発信していきます。
+        <br>
+        少しでも皆様のお役に立てれば幸いです。
+        <br>
+        もしご意見、ご相談等あればぜひご連絡ください。
+        連絡先はこのサイト以外で他言しないように。
+        <br>
+        教室：1100（2026.07.25現在）　
+        LINE：高橋陽菜　
+        メール：hina_takahashi@icloud.com
+    
+
+    </p>
+</section>
+
+<section class="sec-underline">
+    <h2 class="heading-underline">下線の見出し</h2>
+    <p>ここに文章を書けます。</p>
+</section>
+
+<section class="sec-bg">
+    <h2 class="heading-bg">背景色の見出し</h2>
+    <p>ここに文章を書けます。</p>
+</section>
+
+
+        
+    </main>
+
+    <footer>
+        <p>© 2026 81th100引継ぎ</p>
+    </footer>
+
+<script>
+// 前回のスクロール位置を記録する変数
+let lastScroll = 0;
+
+// スクロールしたときに動く処理
+window.addEventListener("scroll", function() {
+    let currentScroll = window.pageYOffset; // 今のスクロール位置
+
+    if (currentScroll > lastScroll) {
+        // 下スクロール → ヘッダーを隠す
+        document.getElementById("headerLeft").classList.add("hide");
+        document.getElementById("headerRight").classList.add("hide");
+    } else {
+        // 上スクロール → ヘッダーを表示
+        document.getElementById("headerLeft").classList.remove("hide");
+        document.getElementById("headerRight").classList.remove("hide");
+    }
+
+    lastScroll = currentScroll; // 今の位置を記録
+});
+
+// MENUボタンを押したときの処理
+document.getElementById("menuBtn").addEventListener("click", function() {
+    const menu = document.getElementById("navMenu");
+
+    // 表示・非表示を切り替える
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+});
+</script>
+
+
+</body>
+</html>

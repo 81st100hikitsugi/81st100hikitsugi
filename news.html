@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>81th100引継ぎ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <!-- 左上：HPボタン -->
+<div class="header-left" id="headerLeft">
+    <a href="index.html"><h1>81th100引継ぎ</h1></a>
+</div>
+
+<!-- 右上：ナビボタン -->
+<div class="header-right" id="headerRight">
+    <a id="menuBtn"><h1>≡</h1></a>
+</div>
+
+<!-- ナビメニュー（右上から開く） -->
+<div class="nav-menu" id="navMenu">
+    <a href="news.html">ニュース</a>
+    <a href="gijiroku.html">議事録</a>
+    <a href="1100.html">1100 11番坑道</a>
+    <a href="2100.html">2100 unknown</a>
+    <a href="3100.html">3100 unknown</a>
+    <a href="skp.html">SketchUp</a>
+    <a href="mp4.html">動画編集</a>
+</div>
+
+</header>
+
+    <main>
+        <section class="hero">
+            <h2>ニュース</h2>
+            <p>ろ</p>
+        </section>
+
+        <section class="sec-underline">
+        <h2 class="heading-underline">202-.--.--　【議事録】</h2>
+        <p>テストです。第ーー回会議の議事録を作りました。</p>
+        </section>
+
+        <section class="sec-underline">
+        <h2 class="heading-underline">202-.--.--　【お願い】</h2>
+        <p>テストです。ーーさん、ーーのコンセプトアートをよろしくお願いします。</p>
+        </section>
+
+        <section class="sec-underline">
+        <h2 class="heading-underline">202-.--.--　【進捗】</h2>
+        <p>テストです。ーーの木材の本数を数え終わりました。--.xlsx</p>
+        </section>
+
+        <section class="sec-underline">
+        <h2 class="heading-underline">2026.07.26　test</h2>
+        <p>テストです。最新のものを上に載せていく。</p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>© 2026 81th100引継ぎ</p>
+    </footer>
+<script>
+// 前回のスクロール位置を記録する変数
+let lastScroll = 0;
+
+// スクロールしたときに動く処理
+window.addEventListener("scroll", function() {
+    let currentScroll = window.pageYOffset; // 今のスクロール位置
+
+    if (currentScroll > lastScroll) {
+        // 下スクロール → ヘッダーを隠す
+        document.getElementById("headerLeft").classList.add("hide");
+        document.getElementById("headerRight").classList.add("hide");
+    } else {
+        // 上スクロール → ヘッダーを表示
+        document.getElementById("headerLeft").classList.remove("hide");
+        document.getElementById("headerRight").classList.remove("hide");
+    }
+
+    lastScroll = currentScroll; // 今の位置を記録
+});
+
+// MENUボタンを押したときの処理
+document.getElementById("menuBtn").addEventListener("click", function() {
+    const menu = document.getElementById("navMenu");
+
+    // 表示・非表示を切り替える
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+});
+</script>
+</body>
+</html>
