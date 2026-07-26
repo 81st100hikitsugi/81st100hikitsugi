@@ -39,7 +39,6 @@ body {
 }
 
 .header-right a {
-    font-size: 30;
     color: #0a3e5d;
     text-decoration: none;
     font-weight: bold;
@@ -59,7 +58,6 @@ body {
 }
 
 .nav-menu a {
-    font-size: 30;
     display: block;
     margin: 10px 0;
     text-decoration: none;
