@@ -39,6 +39,7 @@ body {
 }
 
 .header-right a {
+    font-size: 30;
     color: #0a3e5d;
     text-decoration: none;
     font-weight: bold;
@@ -58,6 +59,7 @@ body {
 }
 
 .nav-menu a {
+    font-size: 30;
     display: block;
     margin: 10px 0;
     text-decoration: none;
@@ -169,10 +171,10 @@ section {
     right: 20px;    /* 画面右からの距離 */
     background: #0a3e5d; /* ボタンの色（陽菜が好きに変えてOK） */
     color: white;   /* 文字色 */
-    padding: 12px 16px;
+    padding: 14px;
     border-radius: 50%; /* 丸いボタン */
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     z-index: 999;   /* 他の要素より前に出す */
 }
@@ -191,37 +193,3 @@ footer {
     margin-top: 40px;
 }
 
-/* ▼ スマホ用（幅768px以下） */
-
-    @media (max-width: 768px) {
-    .header-left {
-        padding: 10px 14px;   /* ← 少し小さく */
-    }
-    .header-left a {
-        font-size: 16px;      /* ← 少し小さく */
-    }
-
-
-
-    .header-right {
-        top: 12px;
-        right: 12px;
-        padding: 14px 20px;
-        border-radius: 10px;
-    }
-    .header-right a {
-        font-size: 18px;
-    }
-
-    .nav-menu {
-        top: 70px;
-        right: 12px;
-        padding: 18px;
-    }
-
-    .pageup-btn {
-    padding: 14px;     /* ← これで完全な円になる */
-    border-radius: 50%;
-}
-
-}
