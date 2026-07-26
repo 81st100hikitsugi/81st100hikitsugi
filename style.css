@@ -26,6 +26,16 @@ body {
     font-weight: bold;
 }
 
+.header-left h2 {
+    margin: 0;          /* ← 余白を消す */
+    padding: 0;         /* ← 高さを揃える */
+    font-size: 24px;    /* ← メニューと同じにする */
+    font-weight: bold;
+    color: #0a3e5d;
+    line-height: 1;     /* ← 高さが安定する */
+}
+
+
 /* 右上のMENUボタン */
 .header-right {
     position: fixed;
@@ -39,17 +49,20 @@ body {
 }
 
 .header-right a {
+    padding: 10px 15px;   /* ← HPボタンと同じにする */
     color: #0a3e5d;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* メニューアイコン（≡ と ×）のサイズを固定 */
+/* メニューアイコン（≡ と ×）を HPボタンと同じ体裁にする */
 #menuIcon {
-    font-size: 28px;   /* ← ずっと同じ大きさになる */
+    font-size: 24px;     /* ← h2 と同じ */
     font-weight: bold;
-    line-height: 1;    /* ← 高さが安定する */
+    color: #0a3e5d;
+    line-height: 1;
 }
+
 
 
 
