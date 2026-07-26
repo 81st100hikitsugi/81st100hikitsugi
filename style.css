@@ -192,17 +192,16 @@ footer {
 }
 
 /* ▼ スマホ用（幅768px以下） */
-@media (max-width: 768px) {
 
+    @media (max-width: 768px) {
     .header-left {
-        top: 12px;
-        left: 12px;
-        padding: 14px 20px;
-        border-radius: 10px;
+        padding: 10px 14px;   /* ← 少し小さく */
     }
     .header-left a {
-        font-size: 18px;
+        font-size: 16px;      /* ← 少し小さく */
     }
+
+
 
     .header-right {
         top: 12px;
@@ -221,9 +220,8 @@ footer {
     }
 
     .pageup-btn {
-        bottom: 25px;
-        right: 25px;
-        padding: 16px 18px;
-        font-size: 22px;
-    }
+    padding: 14px;     /* ← これで完全な円になる */
+    border-radius: 50%;
+}
+
 }
