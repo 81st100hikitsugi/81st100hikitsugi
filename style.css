@@ -188,7 +188,7 @@ section {
     border-radius: 50%; /* 丸いボタン */
     text-decoration: none;
     font-size: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-weight: bold;
     z-index: 999;   /* 他の要素より前に出す */
 }
 
