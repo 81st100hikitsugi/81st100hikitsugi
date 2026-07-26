@@ -182,8 +182,8 @@ section {
     position: fixed;
     bottom: 20px;   /* 画面下からの距離 */
     right: 20px;    /* 画面右からの距離 */
-    background: #0a3e5d; /* ボタンの色（陽菜が好きに変えてOK） */
-    color: white;   /* 文字色 */
+    background: #0a3f5d00; /* ボタンの色（陽菜が好きに変えてOK） */
+    color: #0a3e5d;   /* 文字色 */
     padding: 16px 18px;
     border-radius: 50%; /* 丸いボタン */
     text-decoration: none;
@@ -192,9 +192,9 @@ section {
     z-index: 999;   /* 他の要素より前に出す */
 }
 
-/* ホバーしたときの演出（任意） */
+/* ホバーしたときの演出（任意）←なし */
 .pageup-btn:hover {
-    background: #509ac4;
+    background: #509ac400;
 }
 
 
