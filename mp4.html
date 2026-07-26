@@ -30,6 +30,10 @@
     <a href="mp4.html">動画編集</a>
 </div>
 
+<!-- 画面全体を覆う背景 -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
 </header>
 
     <main>
@@ -66,14 +70,15 @@
         <p>© 2026 81th100引継ぎ</p>
     </footer>
 
-    <a href="#top" class="pageup-btn">▲</a>
+    <!-- 2行目からjava -->
+<a href="#top" class="pageup-btn">▲</a>
 <script>
 // 前回のスクロール位置を記録する変数
 let lastScroll = 0;
 
 // スクロールしたときに動く処理
 window.addEventListener("scroll", function() {
-    let currentScroll = window.pageYOffset; // 今のスクロール位置
+    let currentScroll = window.pageYOffset;
 
     if (currentScroll > lastScroll) {
         // 下スクロール → ヘッダーを隠す
@@ -85,15 +90,33 @@ window.addEventListener("scroll", function() {
         document.getElementById("headerRight").classList.remove("hide");
     }
 
-    lastScroll = currentScroll; // 今の位置を記録
+    lastScroll = currentScroll;
 });
 
-// MENUボタンを押したときの処理
+// ▼ フルスクリーンメニューの処理
 document.getElementById("menuBtn").addEventListener("click", function() {
     const menu = document.getElementById("navMenu");
+    const overlay = document.getElementById("menuOverlay");
+    const btn = document.getElementById("menuBtn");
 
-    // 表示・非表示を切り替える
-    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    const isOpen = menu.style.display === "block";
+
+    if (isOpen) {
+        menu.style.display = "none";
+        overlay.style.display = "none";
+        btn.textContent = "≡";
+    } else {
+        menu.style.display = "block";
+        overlay.style.display = "block";
+        btn.textContent = "×";
+    }
+});
+
+// ▼ 背景を押したら閉じる
+document.getElementById("menuOverlay").addEventListener("click", function() {
+    document.getElementById("navMenu").style.display = "none";
+    document.getElementById("menuOverlay").style.display = "none";
+    document.getElementById("menuBtn").textContent = "≡";
 });
 </script>
 </body>

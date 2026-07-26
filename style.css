@@ -44,25 +44,6 @@ body {
     font-weight: bold;
 }
 
-/* ナビメニュー（右上から開く） */
-.nav-menu {
-    position: fixed;
-    top: 60px;
-    right: 10px;
-    background: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 8px;
-    display: none; /* 最初は非表示 */
-    z-index: 999;
-}
-
-.nav-menu a {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    color: #333;
-}
 
 /* 隠すときの透明化 */
 .hide {
@@ -191,3 +172,39 @@ footer {
     margin-top: 40px;
 }
 
+/* ▼ 画面全体を覆う背景 */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6); /* 半透明の黒 */
+    display: none;
+    z-index: 900;
+}
+
+/* ▼ フルスクリーンメニュー本体 */
+.nav-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+    text-align: center;
+}
+
+.nav-menu a {
+    display: block;
+    margin: 20px 0;
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ▼ メニューボタン（≡ → ×）の見た目 */
+.header-right a {
+    font-size: 28px;
+    font-weight: bold;
+}
