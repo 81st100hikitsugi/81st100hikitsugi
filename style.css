@@ -70,118 +70,6 @@ body {
     pointer-events: none;
 }
 
-body {
-    margin: 0;
-    font-family: "Hiragino Sans", sans-serif;
-    background: #f7f7f7;
-}
-
-/* ヘッダー */
-
-/* ▼ スマホ用（幅768px以下） */
-@media (max-width: 768px) {
-
-    /* 左上のHPボタン */
-    .header-left {
-        top: 12px;
-        left: 12px;
-        padding: 14px 20px;   /* ← スマホで大きく */
-        border-radius: 10px;
-    }
-    .header-left a {
-        font-size: 18px;      /* ← 文字も大きく */
-    }
-
-    /* 右上のMENUボタン */
-    .header-right {
-        top: 12px;
-        right: 12px;
-        padding: 14px 20px;   /* ← スマホで大きく */
-        border-radius: 10px;
-    }
-    .header-right a {
-        font-size: 18px;      /* ← 文字も大きく */
-    }
-
-    /* ナビメニュー（開いたときの位置調整） */
-    .nav-menu {
-        top: 70px;
-        right: 12px;
-        padding: 18px;
-    }
-
-    /* 上に行くボタン */
-    .pageup-btn {
-        bottom: 25px;
-        right: 25px;
-        padding: 16px 18px;   /* ← スマホで押しやすく */
-        font-size: 22px;      /* ← アイコンを大きく */
-    }
-}
-
-
-/* 左上のHPボタン */
-.header-left {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background: #ffb6c100;
-    padding: 10px 15px;
-    border-radius: 8px;
-    z-index: 1000;
-    transition: opacity 0.3s;
-}
-
-.header-left a {
-    color: #0a3e5d;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* 右上のMENUボタン */
-.header-right {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background: #ffb6c100;
-    padding: 10px 15px;
-    border-radius: 8px;
-    z-index: 1000;
-    transition: opacity 0.3s;
-}
-
-.header-right a {
-    color: #0a3e5d;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* ナビメニュー（右上から開く） */
-.nav-menu {
-    position: fixed;
-    top: 60px;
-    right: 10px;
-    background: white;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 8px;
-    display: none; /* 最初は非表示 */
-    z-index: 999;
-}
-
-.nav-menu a {
-    display: block;
-    margin: 10px 0;
-    text-decoration: none;
-    color: #333;
-}
-
-/* 隠すときの透明化 */
-.hide {
-    opacity: 0;
-    pointer-events: none;
-}
-
 
 
 
@@ -311,6 +199,119 @@ footer {
     background: #ddd;
     margin-top: 40px;
 }
+
+body {
+    margin: 0;
+    font-family: "Hiragino Sans", sans-serif;
+    background: #f7f7f7;
+}
+
+/* ヘッダー */
+
+/* ▼ スマホ用（幅768px以下） */
+@media (max-width: 768px) {
+
+    /* 左上のHPボタン */
+    .header-left {
+        top: 12px;
+        left: 12px;
+        padding: 14px 20px;   /* ← スマホで大きく */
+        border-radius: 10px;
+    }
+    .header-left a {
+        font-size: 18px;      /* ← 文字も大きく */
+    }
+
+    /* 右上のMENUボタン */
+    .header-right {
+        top: 12px;
+        right: 12px;
+        padding: 14px 20px;   /* ← スマホで大きく */
+        border-radius: 10px;
+    }
+    .header-right a {
+        font-size: 18px;      /* ← 文字も大きく */
+    }
+
+    /* ナビメニュー（開いたときの位置調整） */
+    .nav-menu {
+        top: 70px;
+        right: 12px;
+        padding: 18px;
+    }
+
+    /* 上に行くボタン */
+    .pageup-btn {
+        bottom: 25px;
+        right: 25px;
+        padding: 16px 18px;   /* ← スマホで押しやすく */
+        font-size: 22px;      /* ← アイコンを大きく */
+    }
+}
+
+
+/* 左上のHPボタン */
+.header-left {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #ffb6c100;
+    padding: 10px 15px;
+    border-radius: 8px;
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+.header-left a {
+    color: #0a3e5d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 右上のMENUボタン */
+.header-right {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #ffb6c100;
+    padding: 10px 15px;
+    border-radius: 8px;
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+.header-right a {
+    color: #0a3e5d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ナビメニュー（右上から開く） */
+.nav-menu {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    display: none; /* 最初は非表示 */
+    z-index: 999;
+}
+
+.nav-menu a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+/* 隠すときの透明化 */
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 
 
