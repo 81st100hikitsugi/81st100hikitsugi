@@ -162,15 +162,6 @@ section {
     font-size: 16px;
 }
 
-/* スマホ対応（自動で縦並び） */
-@media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-    }
-    .card {
-        width: 100%;
-    }
-}
 
 .pageup-btn {
     position: fixed;
