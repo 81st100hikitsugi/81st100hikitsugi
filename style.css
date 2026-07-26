@@ -187,7 +187,7 @@ section {
     padding: 16px 18px;
     border-radius: 50%; /* 丸いボタン */
     text-decoration: none;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     z-index: 999;   /* 他の要素より前に出す */
 }
