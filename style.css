@@ -224,8 +224,3 @@ footer {
     text-decoration: none;
 }
 
-/* ▼ メニューボタン（≡ → ×）の見た目 */
-.header-right a {
-    font-size: 28px;
-    font-weight: bold;
-}
