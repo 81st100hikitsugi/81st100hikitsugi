@@ -27,10 +27,9 @@ body {
 }
 
 .header-left h1 {
-    font-size: 30px;
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: #0a3e5d;
     line-height: 1;
