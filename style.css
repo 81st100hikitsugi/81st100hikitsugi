@@ -44,6 +44,14 @@ body {
     font-weight: bold;
 }
 
+/* メニューアイコン（≡ と ×）のサイズを固定 */
+#menuIcon {
+    font-size: 28px;   /* ← ずっと同じ大きさになる */
+    font-weight: bold;
+    line-height: 1;    /* ← 高さが安定する */
+}
+
+
 
 /* 隠すときの透明化 */
 .hide {

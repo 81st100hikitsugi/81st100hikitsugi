@@ -16,8 +16,9 @@
 
 <!-- 右上：ナビボタン -->
 <div class="header-right" id="headerRight">
-    <a id="menuBtn"><h1>≡</h1></a>
+    <a id="menuBtn"><span id="menuIcon">≡</span></a>
 </div>
+
 
 <!-- ナビメニュー（右上から開く） -->
 <div class="nav-menu" id="navMenu">
@@ -187,18 +188,20 @@ window.addEventListener("scroll", function() {
 document.getElementById("menuBtn").addEventListener("click", function() {
     const menu = document.getElementById("navMenu");
     const overlay = document.getElementById("menuOverlay");
-    const btn = document.getElementById("menuBtn");
+    const icon = document.getElementById("menuIcon");  // ← ここが重要！
 
     const isOpen = menu.style.display === "block";
 
     if (isOpen) {
+        // 閉じる
         menu.style.display = "none";
         overlay.style.display = "none";
-        btn.textContent = "≡";
+        icon.textContent = "≡";   // ← メニューアイコンを戻す
     } else {
+        // 開く
         menu.style.display = "block";
         overlay.style.display = "block";
-        btn.textContent = "×";
+        icon.textContent = "×";   // ← メニューアイコンを変える
     }
 });
 
@@ -206,8 +209,9 @@ document.getElementById("menuBtn").addEventListener("click", function() {
 document.getElementById("menuOverlay").addEventListener("click", function() {
     document.getElementById("navMenu").style.display = "none";
     document.getElementById("menuOverlay").style.display = "none";
-    document.getElementById("menuBtn").textContent = "≡";
+    document.getElementById("menuIcon").textContent = "≡";
 });
+
 </script>
 
 </body>
