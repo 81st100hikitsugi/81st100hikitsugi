@@ -93,6 +93,10 @@ nav li.dropdown:hover > ul.submenu {
     border-radius: 10px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 
