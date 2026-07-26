@@ -6,28 +6,44 @@ body {
 
 /* ヘッダー */
 
-@media (max-width: 600px) {
+/* ▼ スマホ用（幅768px以下） */
+@media (max-width: 768px) {
 
-    .header-left,
-    .header-right,
-    #topBtn {
-        padding: 8px 12px;      /* 少し小さく */
-        font-size: 14px;        /* 文字も少し小さく */
-    }
-
+    /* 左上のHPボタン */
     .header-left {
-        top: 8px;
-        left: 8px;
+        top: 12px;
+        left: 12px;
+        padding: 14px 20px;   /* ← スマホで大きく */
+        border-radius: 10px;
+    }
+    .header-left a {
+        font-size: 18px;      /* ← 文字も大きく */
     }
 
+    /* 右上のMENUボタン */
     .header-right {
-        top: 8px;
-        right: 8px;
+        top: 12px;
+        right: 12px;
+        padding: 14px 20px;   /* ← スマホで大きく */
+        border-radius: 10px;
+    }
+    .header-right a {
+        font-size: 18px;      /* ← 文字も大きく */
     }
 
-    #topBtn {
-        bottom: 15px;
-        right: 15px;
+    /* ナビメニュー（開いたときの位置調整） */
+    .nav-menu {
+        top: 70px;
+        right: 12px;
+        padding: 18px;
+    }
+
+    /* 上に行くボタン */
+    .pageup-btn {
+        bottom: 25px;
+        right: 25px;
+        padding: 16px 18px;   /* ← スマホで押しやすく */
+        font-size: 22px;      /* ← アイコンを大きく */
     }
 }
 
