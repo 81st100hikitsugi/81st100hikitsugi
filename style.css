@@ -115,7 +115,30 @@ img {
     height: auto;
 }
 
+.number1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #0a3e5d;
+    text-align: center;
+    padding: 0;
+}
 
+.number2{
+    font-size: 100px;
+    font-weight: bold;
+    color: #0a3e5d;
+    text-align: center;
+    padding: 0;
+}
+
+.number3{
+    font-size: 50px;
+    font-weight: bold;
+    color: #0a3e5d;
+    text-align: right;
+    margin-right: 100px;
+    padding: 0;
+}
 
 /* セクション共通 */
 section {
