@@ -103,6 +103,31 @@ nav li.dropdown:hover > ul.submenu {
     border-radius: 10px;
 }
 
+.image-box {
+    position: relative; /* ← 画像の上に文字を置くための土台 */
+    display: inline-block;
+    
+}
+
+.image-box img {
+     width: 100vw;      /* 画面の横幅ぴったり */
+    height: 100vh;     /* 画面の高さぴったり */
+    object-fit: cover; /* 画像を切り取ってでも画面にフィットさせる */
+    display: block;    /* 余白を消す */
+}
+
+.image-text {
+    position: absolute; /* ← 画像の上に重ねる */
+    top: 50%;           /* ← 上から50%（中央） */
+    left: 50%;          /* ← 左から50%（中央） */
+    transform: translate(-50%, -50%); /* ← 完全に中央にする */
+    color: #0a3e5d;       /* ← 文字色 */
+    font-size: 26px;    /* ← 好きなサイズ */
+    font-weight: bold;
+    
+}
+
+
 .content {
     background: white;
     padding: 20px;
