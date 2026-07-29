@@ -10,7 +10,7 @@ body {
 
 /* 左上のHPボタン */
 .header-left {
-    font-size: 30px;
+    font-size: 40px;
     position: fixed;
     top: 10px;
     left: 10px;
@@ -22,14 +22,14 @@ body {
 }
 
 .header-left a {
-    font-size: 30px;
+    font-size: 40px;
     color: #0a3e5d;
     text-decoration: none;
     font-weight: bold;
 }
 
 .header-left h1 {
-    font-size: 30px;
+    font-size: 40px;
     margin: 0;
     padding: 0;
     font-size: 30px;
@@ -38,7 +38,7 @@ body {
     line-height: 1;
 }
 .header-left {
-    font-size: 30px;
+    font-size: 40px;
     padding: 10px 15px;
 }
 
@@ -66,7 +66,7 @@ body {
 
 
 #menuIcon {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: #0a3e5d;
     line-height: 1;      /* ← h1 と完全一致 */
