@@ -194,6 +194,12 @@ section {
     padding-left: 10px;
 }
 
+.sec-leftline a {
+    color: #333;   /* ← 好きな色に変更してOK */
+    text-decoration: none; /* ← 下線を消す（必要なら） */
+}
+
+
 /* 背景色タイプ */
 .heading-bg {
     background: #0a3e5d;
