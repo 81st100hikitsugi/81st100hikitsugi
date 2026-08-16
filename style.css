@@ -103,13 +103,11 @@ nav li.dropdown:hover > ul.submenu {
     border-radius: 10px;
 }
 
-.image-box-in {
+.image-box {
     position: relative; /* ← 画像の上に文字を置くための土台 */
     display: inline-block;
     
 }
-
-
 
 .image-text {
     position: absolute; /* ← 画像の上に重ねる */
