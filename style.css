@@ -209,6 +209,11 @@ section {
 }
 
 
+/* 太字 */
+.bold {
+    font-weight: bold;
+}
+
 
 /* カードを横に4つ並べる */
 .card-container {
