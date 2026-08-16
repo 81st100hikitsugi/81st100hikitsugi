@@ -103,24 +103,12 @@ nav li.dropdown:hover > ul.submenu {
     border-radius: 10px;
 }
 
-.image-box {
+.image-box-in {
     position: relative; /* ← 画像の上に文字を置くための土台 */
     display: inline-block;
     
 }
 
-.image-box img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-@media screen and (max-width: 600px) {
-    .image-box img {
-        width: 100%;   /* ← スマホは横幅ぴったり */
-        height: auto;  /* ← 高さは元の比率のまま */
-        object-fit: contain; /* ← 必要なら（なくてもOK） */
-    }
-}
 
 
 .image-text {
